@@ -6,20 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="jsf-demo" />
         <module name="tomcat-jndi-starter" />
         <module name="postgres-tomcat" />
+        <module name="tomcat-jsf-starter" />
+        <module name="postgres-tomcat (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jsf-demo" target="1.8" />
       <module name="postgres-tomcat" target="1.8" />
+      <module name="postgres-tomcat (1)" target="1.8" />
       <module name="tomcat-jndi" target="1.8" />
       <module name="tomcat-jndi-starter" target="1.8" />
+      <module name="tomcat-jsf-starter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jsf-demo" options="-parameters" />
       <module name="postgres-tomcat" options="-parameters" />
+      <module name="postgres-tomcat (1)" options="-parameters" />
       <module name="tomcat-jndi-starter" options="-parameters" />
+      <module name="tomcat-jsf-starter" options="-parameters" />
     </option>
   </component>
 </project>

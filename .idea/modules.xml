@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/jsf-demo/jsf-demo.iml" filepath="$PROJECT_DIR$/jsf-demo/jsf-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/postgres-tomcat/postgres-tomcat.iml" filepath="$PROJECT_DIR$/postgres-tomcat/postgres-tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsf-demo/postgres-tomcat (1).iml" filepath="$PROJECT_DIR$/jsf-demo/postgres-tomcat (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/tomcat-jndi.iml" filepath="$PROJECT_DIR$/tomcat-jndi.iml" />
       <module fileurl="file://$PROJECT_DIR$/tomcat-jndi-starter/tomcat-jndi-starter.iml" filepath="$PROJECT_DIR$/tomcat-jndi-starter/tomcat-jndi-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tomcat-jsf-starter/tomcat-jsf-starter.iml" filepath="$PROJECT_DIR$/tomcat-jsf-starter/tomcat-jsf-starter.iml" />
     </modules>
   </component>
 </project>

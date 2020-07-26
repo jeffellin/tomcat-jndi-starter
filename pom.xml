@@ -18,6 +18,8 @@
     <modules>
         <module>postgres-tomcat</module>
         <module>tomcat-jndi-starter</module>
+        <module>tomcat-jsf-starter</module>
+        <module>jsf-demo</module>
     </modules>
    
 

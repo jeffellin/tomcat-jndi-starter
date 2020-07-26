@@ -1,4 +1,4 @@
-package com.ellin.tomcat.db.autoconfigure;
+package com.ellin.tomcat.db;
 
 public class DBConfiguration {
 

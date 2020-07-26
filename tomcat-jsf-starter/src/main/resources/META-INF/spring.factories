@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.ellin.tomcat.db.TomcatDb
+com.ellin.tomcat.faces.autoconfigure.JSFConfig

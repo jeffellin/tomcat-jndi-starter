@@ -1,8 +1,7 @@
-package com.ellin.tomcat.db.autoconfigure;
+package com.ellin.tomcat.db;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import java.util.List;
 import java.util.Map;
 
 @ConfigurationProperties(prefix = "com.ellin.tomcat.db")
