@@ -23,6 +23,86 @@ public class DBConfiguration {
     private String validationQueryTimeout = "-1";
     private String connectionProperties = "";
 
+    public String getMaxActive() {
+        return maxActive;
+    }
+
+    public void setMaxActive(String maxActive) {
+        this.maxActive = maxActive;
+    }
+
+    public String getInitialSize() {
+        return initialSize;
+    }
+
+    public void setInitialSize(String initialSize) {
+        this.initialSize = initialSize;
+    }
+
+    public String getMaxWait() {
+        return maxWait;
+    }
+
+    public void setMaxWait(String maxWait) {
+        this.maxWait = maxWait;
+    }
+
+    public String getTestOnBorrow() {
+        return testOnBorrow;
+    }
+
+    public void setTestOnBorrow(String testOnBorrow) {
+        this.testOnBorrow = testOnBorrow;
+    }
+
+    public String getTestOnConnect() {
+        return testOnConnect;
+    }
+
+    public void setTestOnConnect(String testOnConnect) {
+        this.testOnConnect = testOnConnect;
+    }
+
+    public String getTestOnReturn() {
+        return testOnReturn;
+    }
+
+    public void setTestOnReturn(String testOnReturn) {
+        this.testOnReturn = testOnReturn;
+    }
+
+    public String getTestWhileIdle() {
+        return testWhileIdle;
+    }
+
+    public void setTestWhileIdle(String testWhileIdle) {
+        this.testWhileIdle = testWhileIdle;
+    }
+
+    public String getValidationQuery() {
+        return validationQuery;
+    }
+
+    public void setValidationQuery(String validationQuery) {
+        this.validationQuery = validationQuery;
+    }
+
+    public String getValidationQueryTimeout() {
+        return validationQueryTimeout;
+    }
+
+    public void setValidationQueryTimeout(String validationQueryTimeout) {
+        this.validationQueryTimeout = validationQueryTimeout;
+    }
+
+    public String getConnectionProperties() {
+        return connectionProperties;
+    }
+
+    public void setConnectionProperties(String connectionProperties) {
+        this.connectionProperties = connectionProperties;
+    }
+
     public String getName() {
         return name;
     }
@@ -94,6 +174,8 @@ public class DBConfiguration {
     public void setFactory(String factory) {
         this.factory = factory;
     }
+
+
 
     @Override
     public String toString() {

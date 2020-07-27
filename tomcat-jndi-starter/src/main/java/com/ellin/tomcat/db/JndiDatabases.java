@@ -9,6 +9,9 @@ public class JndiDatabases {
 
     Map<String,DBConfiguration> dbConfigurationList;
 
+    private String test;
+
+
 
     public Map<String,DBConfiguration> getDbConfigurationList() {
         return dbConfigurationList;
@@ -16,6 +19,14 @@ public class JndiDatabases {
 
     public void setDbConfigurationList(Map<String,DBConfiguration> dbConfigurationList) {
         this.dbConfigurationList = dbConfigurationList;
+    }
+
+    public String getTest() {
+        return test;
+    }
+
+    public void setTest(String test) {
+        this.test = test;
     }
 
     @Override
