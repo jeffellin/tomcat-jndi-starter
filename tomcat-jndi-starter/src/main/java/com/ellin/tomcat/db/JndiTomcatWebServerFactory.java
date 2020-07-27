@@ -5,6 +5,9 @@ import org.springframework.boot.web.embedded.tomcat.*;
 
 public class JndiTomcatWebServerFactory extends TomcatServletWebServerFactory {
 
+    public JndiTomcatWebServerFactory() {
+    }
+
     JndiDatabases jndiDatabases;
 
     public JndiTomcatWebServerFactory(JndiDatabases jndiDatabases) {
@@ -14,11 +17,18 @@ public class JndiTomcatWebServerFactory extends TomcatServletWebServerFactory {
     @Override
     protected TomcatWebServer getTomcatWebServer(org.apache.catalina.startup.Tomcat tomcat) {
         tomcat.enableNaming();
-        return super.getTomcatWebServer(tomcat);
+        return new TomcatWebServer(tomcat, this.getPort() >= 0);
+
+    }
+
+    public TomcatWebServer test(org.apache.catalina.startup.Tomcat tomcat) {
+        return getTomcatWebServer(tomcat);
+
     }
 
     @Override
     protected void postProcessContext(org.apache.catalina.Context context) {
+
 
         jndiDatabases.dbConfigurationList.forEach((x,dbConfiguration) -> {
 
